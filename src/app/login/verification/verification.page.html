@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button routerDirection="backward" (click)="backToLogin()" text="" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title text-center>One Time Password</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+
+
+    <ion-row >
+      <ion-col size-md="6" offset-md="3">
+        <div>
+          <p id="mediumText">A one time password has been sent to your handphone.</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row >
+      <ion-col size-md="6" offset-md="3">
+        <div>
+          <ion-card>
+            <ion-card-content>
+
+              <ion-row align-items-center>
+                <ion-col>
+                  <ion-input maxlength="4" type="number" placeholder="0000" mode="ios" align="center" inputmode="numeric"></ion-input>
+                </ion-col>
+              </ion-row>
+
+
+
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <div>
+          <ion-button expand="block" type="submit" mode="ios" (click)="checkOTP()">Submit</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <div>
+          <p id="linkText">Re-send Password</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+
+</ion-content>
